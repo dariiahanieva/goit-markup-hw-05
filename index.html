@@ -54,7 +54,8 @@
                 <div class="container hero-link ">
                     <h1 class="hero-title" >Эффективные решения <br> 
                         для вашего бизнеса</h1>
-                    <button type="button" class="button">Заказать услугу</button>
+                    <button type="button" class="button" data-modal-open>Заказать услугу</button>
+                    
                 </div>
             </section>
             <!-- Особенности -->
@@ -113,12 +114,15 @@
                     <ul class="list work-item">
                         <li class="work-item-class">
                             <img src="./img/img_1.jpg" alt="пример1" width="370">
+                            <div class="work-list-descripton">Десктопные приложения</div>
                         </li>
                         <li class="work-item-class">
                             <img src="./img/img_2.jpg" alt="пример2" width="370">
+                            <div class="work-list-descripton">Мобильные приложения</div>
                         </li>
                         <li class="work-item-class">
                             <img src="./img/img_3.jpg" alt="пример3" width="370">
+                            <div class="work-list-descripton">Дизайнерские решения</div>
                         </li>
                     </ul>
                 </div>
@@ -360,6 +364,16 @@
                     </ul>
                 </div>
             </section>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="button-close"button-close-modal>
+                        <svg class="" width="20" height="20">
+                            <use href="./img/close-black.svg#icon-close-black">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </main>
         <!-- Футер-->
         <footer class="footer ">
@@ -415,5 +429,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
